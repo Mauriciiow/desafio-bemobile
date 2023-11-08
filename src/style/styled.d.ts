@@ -1,8 +1,6 @@
 import 'styled-components';
-import {Theme} from './theme';
-
-export type ThemeType = typeof Theme;
+import {ITheme} from './theme';
 
 declare module 'styled-components' {
-  export interface DefaultTheme extends ThemeType {}
+  export interface DefaultTheme extends ITheme {}
 }
