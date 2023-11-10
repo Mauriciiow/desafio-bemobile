@@ -42,20 +42,37 @@ cd desafio-bemobile
 yarn install
 ```
 
-4. Inicie o server pelo terminal
+4. É necessario alterar o ip em dois arquivos (isso foi feito por conta que o AVD do android não suporta o localhost):
+
+```bash
+##mudar a constante BASE_IP
+./
+|-- desafio-bemobile/
+| |-- src/
+| | |-- services/
+| | | |-- api.ts -
+
+##adicionar seu ip no script server-json
+./
+|-- desafio-bemobile/
+| |-- package.json
+```
+
+```bash
+## Você consegue visualizar seu ip usando esse comando no terminal:
+#MacOS:
+ifconfig
+#Windows:
+ipconfig
+```
+
+5. Inicie o server pelo terminal
 
 ```bash
 yarn server-json
 ```
 
-Caso tenha problemas em visualizar os itens vindos da api recomendo modificar o ip para o seu na pasta api.ts que fica em: desafio-mobile/src/services/api.ts
-
-```bash
-## Você consegue visualizar seu ip usando esse comando no terminal:
-ipconfig
-```
-
-5. Inicie o aplicativo:
+6. Inicie o aplicativo:
 
 ## IOS
 
