@@ -33,7 +33,8 @@ export const Accordion = ({data}: AccordionProps) => {
       </ViewContent>
       {showContent && (
         // eslint-disable-next-line react-native/no-inline-styles
-        <Animated.View style={{marginTop: 8, overflow: 'hidden'}}>
+        <Animated.View
+          style={{marginTop: 8, overflow: 'hidden', paddingBottom: 16}}>
           <OpenCardView>
             <OpenCardText location="left">Cargo</OpenCardText>
             <OpenCardText location="right">{data.job}</OpenCardText>

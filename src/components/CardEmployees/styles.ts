@@ -1,3 +1,4 @@
+import {Platform} from 'react-native';
 import styled from 'styled-components/native';
 type TableTextProp = {
   left?: boolean;
@@ -6,6 +7,7 @@ export const TableContainer = styled.View`
   flex: 1;
 `;
 export const TableHeaderView = styled.View`
+  margin-bottom: 2px;
   height: 47px;
   flex-direction: row;
   justify-content: space-between;
@@ -13,6 +15,9 @@ export const TableHeaderView = styled.View`
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
   align-items: center;
+  ${Platform.OS === 'ios'
+    ? 'shadow-color: #000; shadow-offset: 1px 2px; shadow-opacity: 0.2; shadow-radius: 2px;'
+    : 'elevation: 5;'}
 `;
 export const TableHeaderText = styled.Text<TableTextProp>`
   font-size: ${({theme}) => theme.fonts.h2.size}px;
