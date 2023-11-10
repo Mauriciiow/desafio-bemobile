@@ -9,6 +9,7 @@ export const InputContainer = styled.View`
   padding: ${Platform.OS === 'android' ? 4 : 12}px;
   border-radius: 4px;
   padding-left: 12px;
+  padding-right: 12px;
   align-items: center;
 `;
 
