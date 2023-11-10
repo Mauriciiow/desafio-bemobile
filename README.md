@@ -6,6 +6,14 @@ Quando abrir mais informações mostrar: cargo, data de admissão e telefone, co
 
 ![Screenshot-mobile](https://user-images.githubusercontent.com/1697362/194322705-faf9fbbe-ce38-4c17-93f6-50750e68e542.png)
 
+# Ferramentas Utilizadas
+
+- TypeScript
+- React Native
+- Styled-Components
+- json-server
+- Axios
+
 ## Pré-requisitos
 
 Possuir o yarn instalado no seu ambiente.
