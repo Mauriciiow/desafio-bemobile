@@ -7,5 +7,5 @@ export const Container = styled.View`
 `;
 
 export const Logo = styled.Image`
-  margin-left: 20px;
+  margin-left: ${({theme}) => theme.spacing.regular20}px;
 `;
