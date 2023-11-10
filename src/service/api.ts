@@ -1,5 +1,6 @@
 import axios from 'axios';
-import {Platform} from 'react-native';
+
+const BASE_IP = '192.168.8.111';
 export const employeesApi = axios.create({
-  baseURL: `http:${Platform.OS === 'android' ? '10.0.2.2' : 'localhost'}:3000`,
+  baseURL: `http://${BASE_IP}:3000`,
 });
