@@ -33,7 +33,7 @@ git clone https://github.com/Mauriciiow/desafio-bemobile.git
 2. Navegue até o diretório do projeto:
 
 ```bash
-cd desafio-mobile
+cd desafio-bemobile
 ```
 
 3. Instale as dependências do projeto:
