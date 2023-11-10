@@ -19,7 +19,7 @@ export const Home = () => {
   const [inputValue, setValue] = useState<string>('');
   const getEmployees = async () => {
     try {
-      const response = await employeesApi.get<EmployeesItem[]>('');
+      const response = await employeesApi.get<EmployeesItem[]>('/employees');
       const responseFormatted = response.data.map(item => ({
         ...item,
         admission_date: formateDate(item.admission_date),
