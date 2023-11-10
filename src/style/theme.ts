@@ -1,4 +1,4 @@
-import {ITheme} from './types';
+import {ITheme} from './@types';
 
 export const Theme: ITheme = {
   colors: {
@@ -22,5 +22,12 @@ export const Theme: ITheme = {
       family: 'Roboto-Regular',
       size: 16,
     },
+  },
+  spacing: {
+    medium32: 32,
+    regular28: 28,
+    regular20: 20,
+    regular16: 16,
+    litle8: 8,
   },
 };
