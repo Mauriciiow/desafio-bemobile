@@ -12,6 +12,7 @@ Quando abrir mais informações mostrar: cargo, data de admissão e telefone, co
 - React Native
 - Styled-Components
 - json-server
+- react-native-svg
 - Axios
 
 ## Pré-requisitos
@@ -42,27 +43,29 @@ cd desafio-bemobile
 yarn install
 ```
 
-4. É necessario alterar o ip em dois arquivos (isso foi feito por conta que o AVD do android não suporta o localhost):
+4. É necessario alterar o ip em dois arquivos (importante pois o android virtual device não suporta o localhost):
 
 ```bash
-##mudar a constante BASE_IP
+# mudar a constante BASE_IP
 ./
 |-- desafio-bemobile/
 | |-- src/
 | | |-- services/
-| | | |-- api.ts -
+| | | |-- api.ts
 
-##adicionar seu ip no script server-json
+# adicionar seu ip no script server-json
 ./
 |-- desafio-bemobile/
 | |-- package.json
 ```
 
 ```bash
-## Você consegue visualizar seu ip usando esse comando no terminal:
-#MacOS:
+# Você consegue visualizar seu ip usando esse comando no terminal:
+
+# MacOS:
 ifconfig
-#Windows:
+
+# Windows:
 ipconfig
 ```
 
