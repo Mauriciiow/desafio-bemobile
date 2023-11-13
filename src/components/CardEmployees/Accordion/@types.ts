@@ -1,4 +1,4 @@
-import {EmployeesItem} from '../../../Pages/Home/@types';
+import {EmployeesItem} from '../../../pages/Home/@types';
 
 export interface AccordionProps {
   data: EmployeesItem;

@@ -1,7 +1,7 @@
 import React from 'react';
-import {Home} from './src/Pages/Home';
+import {Home} from './src/pages/Home';
 import {ThemeProvider} from 'styled-components/native';
-import {Theme} from './src/Styles/theme';
+import {Theme} from './src/styles/theme';
 
 const App = () => {
   return (

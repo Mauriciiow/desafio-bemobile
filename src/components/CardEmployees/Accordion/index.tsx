@@ -11,7 +11,7 @@ import {
   OpenCardText,
 } from './styles';
 import {IconProvider} from '../../../providers/IconProvider';
-import {Animated, LayoutAnimation} from 'react-native';
+import {Animated, LayoutAnimation, Platform, UIManager} from 'react-native';
 import {animation} from './utils';
 import {DashedBorderBottom} from '../../DashedBorderBottom';
 
@@ -19,6 +19,9 @@ export const Accordion = ({data}: AccordionProps) => {
   const [showContent, setShowcontent] = useState<boolean>(false);
 
   const toggleAnimation = () => {
+    if (Platform.OS === 'android') {
+      UIManager.setLayoutAnimationEnabledExperimental(true);
+    }
     LayoutAnimation.configureNext(animation);
     setShowcontent(!showContent);
   };
