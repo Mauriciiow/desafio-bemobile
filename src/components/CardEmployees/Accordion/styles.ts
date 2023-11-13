@@ -28,11 +28,6 @@ export const ChevronDownIcon = styled.Image``;
 export const OpenCardView = styled.View`
   flex-direction: row;
   justify-content: space-between;
-  border-style: dashed;
-  border-width: 2px;
-  border-color: ${({theme}) => theme.colors.gray10};
-  margin: -2px;
-  margin-bottom: 0;
 `;
 export const OpenCardText = styled.Text<OpenProps>`
   font-family: ${({theme, location}) =>
