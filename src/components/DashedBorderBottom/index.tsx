@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import Svg, {Line} from 'react-native-svg';
-import {Theme} from '../../Styles/theme';
+import {Theme} from '../../styles/theme';
 
 export const DashedBorderBottom = ({}) => (
   <View style={styles.container}>
