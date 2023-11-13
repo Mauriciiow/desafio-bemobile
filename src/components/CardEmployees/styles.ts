@@ -7,7 +7,7 @@ export const TableContainer = styled.View`
   flex: 1;
 `;
 export const TableHeaderView = styled.View`
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   height: 47px;
   flex-direction: row;
   justify-content: space-between;

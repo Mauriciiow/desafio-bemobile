@@ -13,6 +13,7 @@ import {
 import {IconProvider} from '../../../providers/IconProvider';
 import {Animated, LayoutAnimation} from 'react-native';
 import {animation} from './utils';
+import {DashedBorderBottom} from '../../DashedBorderBottom';
 
 export const Accordion = ({data}: AccordionProps) => {
   const [showContent, setShowcontent] = useState<boolean>(false);
@@ -32,19 +33,21 @@ export const Accordion = ({data}: AccordionProps) => {
         </ChevronDownButton>
       </ViewContent>
       {showContent && (
-        <Animated.View
-          style={{marginTop: 8, overflow: 'hidden', paddingBottom: 16}}>
+        <Animated.View style={{marginTop: 8, paddingBottom: 16}}>
           <OpenCardView>
             <OpenCardText location="left">Cargo</OpenCardText>
             <OpenCardText location="right">{data.job}</OpenCardText>
+            <DashedBorderBottom />
           </OpenCardView>
           <OpenCardView>
             <OpenCardText location="left">Data de admissão</OpenCardText>
             <OpenCardText location="right">{data.admission_date}</OpenCardText>
+            <DashedBorderBottom />
           </OpenCardView>
           <OpenCardView>
             <OpenCardText location="left">Telefone</OpenCardText>
             <OpenCardText location="right">{data.phone}</OpenCardText>
+            <DashedBorderBottom />
           </OpenCardView>
         </Animated.View>
       )}
