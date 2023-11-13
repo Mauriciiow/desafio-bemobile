@@ -1,10 +1,10 @@
 import React from 'react';
-import {View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import Svg, {Line} from 'react-native-svg';
 import {Theme} from '../../Styles/theme';
 
 export const DashedBorderBottom = ({}) => (
-  <View style={{position: 'absolute', left: 0, right: 0, bottom: 0}}>
+  <View style={styles.container}>
     <Svg height="1" width="100%">
       <Line
         x1="0"
@@ -18,3 +18,12 @@ export const DashedBorderBottom = ({}) => (
     </Svg>
   </View>
 );
+
+const styles = StyleSheet.create({
+  container: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: 0,
+  },
+});
