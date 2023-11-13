@@ -10,7 +10,7 @@ import {
 import {IconProvider} from '../../providers/IconProvider';
 import {Accordion} from './Accordion';
 import {CardProps} from './@types';
-import {EmployeesItem} from '../../pages/Home/@types';
+import {EmployeesItem} from '../../Pages/Home/@types';
 
 export const CardEmployees = ({data}: CardProps) => {
   return (
