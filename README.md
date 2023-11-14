@@ -13,6 +13,7 @@ Quando abrir mais informações mostrar: cargo, data de admissão e telefone, co
 - Styled-Components
 - json-server
 - Axios
+- react-native-svg
 
 ## Pré-requisitos
 
